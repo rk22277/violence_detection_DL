@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Upload</title>
+</head>
+<body>
+    <h1>Upload Video for Detection</h1>
+    <form action="/video_feed" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    <img src="{{ url_for('video_feed') }}" />
+</body>
+</html>
